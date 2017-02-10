@@ -1,31 +1,33 @@
 // Variables & Objects 
 
-var heightElement = documentGetElementById("height");
-var charElement = documentGetElementById("character");
 
-var heightInput;
-var charInput;
+var heightElement = document.getElementById("height");
+var charElement = document.getElementById("character");
+
+
+var tree = {
+  
+    height: heightElement.value,
+    character: charElement.value
+}
+
 
 // var heightInput = heightElement.value;
 // var charInput = charElement.value;
 
-var tree = {
-  
-    height: "heightInput",
-    character: "charInput"
-  
-}
-
-
 
 // Functions
 
-function keyEnter(key) {
+function keyEnter(keypress) {
   
-  if(event.keyCode == 13) { 
+  if(keypress.keyCode === 13) { 
     
-        console.log(heightInput, charInput);        
+        console.log();        
     }
 }
 
+
 // Listeners
+
+charElement.addEventListener("keypress", keyEnter);
+heightElement.addEventListener("keypress", keyEnter);
