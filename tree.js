@@ -4,33 +4,7 @@
 var heightElement = document.getElementById("height");
 var charElement = document.getElementById("character");
 
-var tree = {height: heightElement.value, character: charElement.value};
-
-
-function branchAdder (tree) {
-  
-  treeBranch = " ";
-
-  //"Master" Loop that contains the Space and Character loops that build the branch 
-  for(h=0; h < tree.height + 1; i++){
-
-  		for(i=h; i<tree.height; i++){
-
-  			treeBranch += " ";
-
-  		}
-
-  		// Character loop uses (*2-1) to center on the "trunk" with and odd number
-  		for(j=0; j<h*2-1; j++){
-
-  			treeBranch += tree.character;
-
-  		}
-
-
-  		treeBranch += "/n";
-  	}
- }
+var tree ;
 
 
 function treeValues(keypress){
@@ -51,6 +25,35 @@ function treeValues(keypress){
 
   }
 }
+
+function branchAdder (tree) {
+  console.log("reached branchAdder")
+  console.log(tree.height, tree.character)
+  treeBranch = "";
+
+  //"Master" Loop that contains the Space and Character loops that build the branch 
+  for (var h=0; h <= tree.height; h++){
+
+  		for (var i=h; i < tree.height; i++){
+
+  			treeBranch += " ";
+
+  		}
+
+  		// Character loop uses (*2-1) to center on the "trunk" with and odd number
+  		for (var j=0; j < h*2-1; j++){
+
+  			treeBranch += tree.character;
+
+  		}
+
+
+  		treeBranch += "\n";
+
+  	}
+
+  	console.log(treeBranch);
+ }
 
 
 // var heightInput = heightElement.value;
