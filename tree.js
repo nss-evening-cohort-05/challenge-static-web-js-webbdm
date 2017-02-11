@@ -12,15 +12,23 @@ function branchAdder (tree) {
   treeBranch = " ";
 
   //"Master" Loop that contains the Space and Character loops that build the branch 
-  for(h=0; h < height + 1; i++){
+  for(h=0; h < tree.height + 1; i++){
 
+  		for(i=h; i<tree.height; i++){
 
+  			treeBranch += " ";
 
-  }
+  		}
+
+  		for(j=0; j<tree.height){
+
+  		}
+
+  	}
+ }
   
   
   
-}
 
 
 function treeValues(keypress){
