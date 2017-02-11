@@ -6,29 +6,23 @@ var charElement = document.getElementById("character");
 
 var tree ;
 
-
 function treeValues(keypress){
 
 	tree = {height: heightElement.value, character: charElement.value};
 
     if(keypress.keyCode === 13) { 
         
-    		console.log(tree);
-
+    	
             if (tree.height === "" || tree.character === "") {
 
             alert("Can't build yo Tree without both parameters");
 
     }
-
     branchAdder(tree);
-
   }
 }
 
 function branchAdder (tree) {
-  console.log("reached branchAdder")
-  console.log(tree.height, tree.character)
   treeBranch = "";
 
   //"Master" Loop that contains the Space and Character loops that build the branch 
@@ -39,19 +33,14 @@ function branchAdder (tree) {
   			treeBranch += " ";
 
   		}
-
   		// Character loop uses (*2-1) to center on the "trunk" with and odd number
   		for (var j=0; j < h*2-1; j++){
 
   			treeBranch += tree.character;
-
   		}
 
-
   		treeBranch += "\n";
-
   	}
-
   	console.log(treeBranch);
  }
 
