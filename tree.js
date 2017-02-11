@@ -4,27 +4,43 @@
 var heightElement = document.getElementById("height");
 var charElement = document.getElementById("character");
 
-var tree = {};
+var tree = {height: heightElement.value, character: charElement.value};
+
+
+function branchAdder (tree) {
+  
+  treeBranch = " ";
+
+  //"Master" Loop that contains the Space and Character loops that build the branch 
+  for(h=0; h < height + 1; i++){
+
+
+
+  }
+  
+  
+  
+}
 
 
 function treeValues(keypress){
 
-  tree = {height: heightElement.value, character: charElement.value};
+	tree = {height: heightElement.value, character: charElement.value};
 
     if(keypress.keyCode === 13) { 
         
-            console.log(tree); 
-
+    		console.log(tree);
 
             if (tree.height === "" || tree.character === "") {
 
             alert("Can't build yo Tree without both parameters");
 
     }
+
+    branchAdder(tree);
+
   }
 }
-
-
 
 
 // var heightInput = heightElement.value;
