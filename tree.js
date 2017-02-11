@@ -20,15 +20,17 @@ function branchAdder (tree) {
 
   		}
 
-  		for(j=0; j<tree.height){
+  		// Character loop uses (*2-1) to center on the "trunk" with and odd number
+  		for(j=0; j<h*2-1; j++){
+
+  			treeBranch += tree.character;
 
   		}
 
+
+  		treeBranch += "/n";
   	}
  }
-  
-  
-  
 
 
 function treeValues(keypress){
@@ -67,9 +69,6 @@ function treeValues(keypress){
 //         console.log('enter was pressed');        
 //     }
 // }
-
-
-
 
 
 // Listeners
