@@ -16,10 +16,10 @@ function treeValues(keypress){
             if (tree.height === "" || tree.character === "") {
 
             alert("Can't build yo Tree without both parameters");
-
+	    }
+	    
+   	    branchAdder(tree);
     }
-    branchAdder(tree);
-  }
 }
 
 function branchAdder (tree) {
@@ -43,25 +43,6 @@ function branchAdder (tree) {
   	}
   	console.log(treeBranch);
  }
-
-
-// var heightInput = heightElement.value;
-// var charInput = charElement.value;
-
-
-// Functions
-
-
-//This works, but is not needed when you just include it after defining the object values in treeValues
-//but it is easily reusable 
-// function keyEnter(keypress) {
-  
-//   if(keypress.keyCode === 13) { 
-    
-//         console.log('enter was pressed');        
-//     }
-// }
-
 
 // Listeners
 
