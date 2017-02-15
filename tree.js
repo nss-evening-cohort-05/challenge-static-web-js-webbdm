@@ -10,7 +10,7 @@ function treeValues(keypress){
 
 	tree = {height: heightElement.value, character: charElement.value};
 
-    if(keypress.keyCode === 13) { 
+    	if(keypress.keyCode === 13) { 
         
     	
             if (tree.height === "" || tree.character === "") {
@@ -19,7 +19,7 @@ function treeValues(keypress){
 	    }
 	    
    	    branchAdder(tree);
-    }
+    	}
 }
 
 function branchAdder (tree) {
