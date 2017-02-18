@@ -1,0 +1,43 @@
+body {
+  background-color: navy;
+  background: url("http://www.motherearthnews.com/~/media/Images/MEN/Editorial/Articles/Magazine%20Articles/2012/10-01/Lawrence%20Kansas%20Lively%20Livable%20and%20Steeped%20in%20History/Great_Places-4.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: navy;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  
+}
+
+.formHolder{
+  height: 230px;
+  width: 400px;
+  background-color: rgba(198, 20, 20, 0.7);
+  margin: 0 auto;
+  margin-top: 70px;
+  border-radius: 10px;
+  border: 5px solid navy;
+}
+
+.treeForm{
+  text-align: center;
+  padding-top: 10px;
+}
+
+img{
+  height: 200px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 7%;
+  
+}
