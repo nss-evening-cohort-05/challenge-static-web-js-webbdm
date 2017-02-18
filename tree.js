@@ -15,7 +15,7 @@ function treeValues(keypress){
     	
             if (tree.height === "" || tree.character === "") {
 
-            alert("Can't build yo Tree without both parameters");
+            	alert("Can't build yo Tree without both parameters");
 	    }
 	    
    	    branchAdder(tree);
